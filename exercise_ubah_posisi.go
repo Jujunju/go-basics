@@ -1,21 +1,21 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
-// )
+import (
+	"fmt"
+)
 
-// func main() {
+func main() {
 
-// 	balikPosisi("jujun")
+	balikPosisi("jujun")
 
-// }
+}
 
-// func balikPosisi(s string) {
+func balikPosisi(s string) {
 
-// 	vs := []byte{s[0], s[1], s[2], s[3], s[4]}
+	vs := []byte{s[0], s[1], s[2], s[3], s[4]}
 
-// 	vs[0], vs[1], vs[2], vs[3], vs[4] = vs[4], vs[3], vs[2], vs[1], vs[0]
+	vs[0], vs[1], vs[2], vs[3], vs[4] = vs[4], vs[3], vs[2], vs[1], vs[0]
 	
-// 	fmt.Println(vs)
+	fmt.Println(vs)
 
-// }
+}

@@ -1,10 +1,10 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
-// 	"os"
-// )
+import (
+	"fmt"
+	"os"
+)
 
-// func main() {
+func main() {
 
-// }
+}

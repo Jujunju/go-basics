@@ -1,27 +1,27 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
-// 	"io"
-// 	"strings"
-// )
+import (
+	"fmt"
+	"io"
+	"strings"
+)
 
-// func main() {
+func main() {
 
-// 	t := strings.NewReader("Jujun Junaedi")
+	t := strings.NewReader("Jujun Junaedi")
 
-// 	m := make([]byte, 10)
+	m := make([]byte, 10)
 
-// 	for {
+	for {
 
-// 		s, e := t.Read(m)
+		s, e := t.Read(m)
 
-// 		fmt.Printf("s = %v m = %v err = %v\n", s, m, e)
+		fmt.Printf("s = %v m = %v err = %v\n", s, m, e)
 
-// 		if e == io.EOF {
-// 			break
-// 		}
+		if e == io.EOF {
+			break
+		}
 
-// 	}
+	}
 
-// }
+}

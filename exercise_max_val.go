@@ -1,23 +1,23 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	fmt.Println(filterMaxVal(10, 20, 30, 40, 50))
+	fmt.Println(filterMaxVal(10, 20, 30, 40, 50))
 
-// }
+}
 
-// func filterMaxVal(v ...int) int {
+func filterMaxVal(v ...int) int {
 
-// 	maxv := v[0]
+	maxv := v[0]
 
-// 	for i := 0; i < len(v); i++ {
-// 		if v[i] > maxv {
-// 			maxv = v[i]
-// 		}
-// 	}
+	for i := 0; i < len(v); i++ {
+		if v[i] > maxv {
+			maxv = v[i]
+		}
+	}
 
-// 	return maxv
+	return maxv
 
-// }
+}

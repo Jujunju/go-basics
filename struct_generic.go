@@ -1,21 +1,21 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// type User[T any] struct {
-// 	ListMap *User[T]
-// 	V       T
-// 	S       []T
-// }
+type User[T any] struct {
+	ListMap *User[T]
+	V       T
+	S       []T
+}
 
-// func main() {
+func main() {
 
-// 	u := &User[string]{
-// 		ListMap: &User[string]{},
-// 		V:       "hello",
-// 		S:       []string{"world"},
-// 	}
+	u := &User[string]{
+		ListMap: &User[string]{},
+		V:       "hello",
+		S:       []string{"world"},
+	}
 
-// 	fmt.Println(&u.V)
+	fmt.Println(&u.V)
 
-// }
+}

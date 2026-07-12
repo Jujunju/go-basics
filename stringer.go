@@ -1,30 +1,30 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// type P struct {
-// 	Name string
-// 	Age int
-// }
+type P struct {
+	Name string
+	Age int
+}
 
-// func main() {
+func main() {
 
-// 	p1 := P{
-// 		Name: "jujun",
-// 		Age: 18,
-// 	}
-// 	p2 := P{
-// 		Name: "yono",
-// 		Age: 20,
-// 	}
+	p1 := P{
+		Name: "jujun",
+		Age: 18,
+	}
+	p2 := P{
+		Name: "yono",
+		Age: 20,
+	}
 
-// 	p1.String()
+	p1.String()
 
-// 	fmt.Println(p1)
-// 	fmt.Println(p2)
+	fmt.Println(p1)
+	fmt.Println(p2)
 
-// }
+}
 
-// func (p P) String() string {
-// 	return fmt.Sprintf("%v ", p.Name)
-// }
+func (p P) String() string {
+	return fmt.Sprintf("%v ", p.Name)
+}

@@ -1,31 +1,31 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// type User struct {
-// 	Name, Username string
-// }
+type User struct {
+	Name, Username string
+}
 
-// type UserRepository interface {
-// 	Create() *User
-// }
+type UserRepository interface {
+	Create() *User
+}
 
-// type NewUser struct {}
+type NewUser struct {}
 
-// func main() {
+func main() {
 
-// 	repo := NewURepository()
+	repo := NewURepository()
 
-// 	newU := repo.Create()
+	newU := repo.Create()
 
-// 	fmt.Println(newU)
+	fmt.Println(newU)
 
-// }
+}
 
-// func (repo *NewUser) Create() *User {
-// 	return &User{Name: "Jujun", Username: "jujun_123"}
-// }
+func (repo *NewUser) Create() *User {
+	return &User{Name: "Jujun", Username: "jujun_123"}
+}
 
-// func NewURepository() UserRepository {
-// 	return &NewUser{}
-// }
+func NewURepository() UserRepository {
+	return &NewUser{}
+}

@@ -1,11 +1,11 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	for {
-// 		fmt.Println("hello world")
-// 	}
+	for {
+		fmt.Println("hello world")
+	}
 	
-// }
+}

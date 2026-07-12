@@ -1,17 +1,17 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
-// )
+import (
+	"fmt"
+)
 
-// func main() {
+func main() {
 
-// 	name, addres, married := getUser("jujun junaedi", "jl selamat", false)
+	name, addres, married := getUser("jujun junaedi", "jl selamat", false)
 
-// 	fmt.Println(name, addres, married)
+	fmt.Println(name, addres, married)
 
-// }
+}
 
-// func getUser(fullName, address string, isMarried bool) (string, string, bool) {
-// 	return fullName, address, isMarried
-// }
+func getUser(fullName, address string, isMarried bool) (string, string, bool) {
+	return fullName, address, isMarried
+}

@@ -1,37 +1,37 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	val := func(value int) int {
-// 		return value
-// 	}
+	val := func(value int) int {
+		return value
+	}
 
 
-// 	names := func(firstName, lastName string) string {
-// 		return firstName + lastName
-// 	}
+	names := func(firstName, lastName string) string {
+		return firstName + lastName
+	}
 
-// 	fmt.Println(sum(val))
-// 	filter2(names)
+	fmt.Println(sum(val))
+	filter2(names)
 
-// }
+}
 
-// func sum(fn func(int) int) int {
-// 	return fn(200) + fn(200)
-// }
+func sum(fn func(int) int) int {
+	return fn(200) + fn(200)
+}
 
-// func filter(fn func(string) string) {
-// 	re := fn("halo")
+func filter(fn func(string) string) {
+	re := fn("halo")
 
-// 	if re == "hussh" {
-// 		fmt.Println("*****")
-// 	} else {
-// 		fmt.Println(re)
-// 	}
-// }
+	if re == "hussh" {
+		fmt.Println("*****")
+	} else {
+		fmt.Println(re)
+	}
+}
 
-// func filter2(fn func(string, string) string) string {
-// 	return fn("jujun", "junaedi")
-// }
+func filter2(fn func(string, string) string) string {
+	return fn("jujun", "junaedi")
+}

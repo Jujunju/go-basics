@@ -1,27 +1,27 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
-// 	"time"
-// )
+import (
+	"fmt"
+	"time"
+)
 
-// type err struct {
-// 	W time.Time
-// 	Y string
-// }
+type err struct {
+	W time.Time
+	Y string
+}
 
-// func main() {
+func main() {
 
-// 	if err := hd(); err != nil {
-// 		fmt.Println(err)
-// 	}
+	if err := hd(); err != nil {
+		fmt.Println(err)
+	}
 
-// }
+}
 
-// func (e *err) Error() string {
-// 	return e.Y
-// }
+func (e *err) Error() string {
+	return e.Y
+}
 
-// func hd() error {
-// 	return &err{time.Now(), "jujun"}
-// }
+func hd() error {
+	return &err{time.Now(), "jujun"}
+}

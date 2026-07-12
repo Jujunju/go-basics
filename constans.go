@@ -1,17 +1,17 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// const (
-// 	firstName = "jujun"
-// 	lastName  = "junaedi"
-// 	fullName  = firstName + lastName
-// )
+const (
+	firstName = "jujun"
+	lastName  = "junaedi"
+	fullName  = firstName + lastName
+)
 
-// func main() {
+func main() {
 
-// 	fmt.Println(firstName)
-// 	fmt.Println(lastName)
-// 	fmt.Println(fullName)
+	fmt.Println(firstName)
+	fmt.Println(lastName)
+	fmt.Println(fullName)
 
-// }
+}

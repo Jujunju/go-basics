@@ -1,14 +1,14 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// var f, l string = "alif", "jamir"
+var f, l string = "alif", "jamir"
 
-// func main() {
+func main() {
 
-// 	i, j := 100, true
+	i, j := 100, true
 
-// 	fmt.Println(f, l)
-// 	fmt.Println(i, j)
+	fmt.Println(f, l)
+	fmt.Println(i, j)
 
-// }
+}

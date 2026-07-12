@@ -1,23 +1,23 @@
-// package main
+package main
 
-// import (
-// 	"golang.org/x/tour/reader"
-// )
+import (
+	"golang.org/x/tour/reader"
+)
 
-// type MyReader struct{}
+type MyReader struct{}
 
-// func main() {
+func main() {
 
-// 	reader.Validate(MyReader{})
+	reader.Validate(MyReader{})
 
-// }
+}
 
-// func (m MyReader) Read(b []byte) (int, error) {
+func (m MyReader) Read(b []byte) (int, error) {
 
-// 	for i := 0; i < len(b); i++ {
-// 		b[i] = 'A'
-// 	}
+	for i := 0; i < len(b); i++ {
+		b[i] = 'A'
+	}
 
-// 	return len(b), nil
+	return len(b), nil
 
-// }
+}

@@ -1,13 +1,13 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	getFullName("jujun", "junaedi")
+	getFullName("jujun", "junaedi")
 
-// }
+}
 
-// func getFullName(firstName, lastName string) string {
-// 	return fmt.Sprint(firstName, lastName)
-// }
+func getFullName(firstName, lastName string) string {
+	return fmt.Sprint(firstName, lastName)
+}

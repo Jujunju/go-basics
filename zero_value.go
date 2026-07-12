@@ -1,9 +1,9 @@
-// package main
+package main
 
-// var name string
-// var age int
-// var bb float32
+var name string
+var age int
+var bb float32
 
-// func main() {
+func main() {
 
-// }
+}

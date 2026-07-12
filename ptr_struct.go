@@ -1,36 +1,36 @@
-// package main
+package main
 
-// import (
-// 	"fmt"
-// 	"time"
-// )
+import (
+	"fmt"
+	"time"
+)
 
-// type AuthResponse struct {
-// 	ID        uint
-// 	Username  string
-// 	Group     string
-// 	Token     string
-// 	CreatedAt time.Time
-// }
+type AuthResponse struct {
+	ID        uint
+	Username  string
+	Group     string
+	Token     string
+	CreatedAt time.Time
+}
 
-// func (a *AuthResponse) getUsername() *string {
-// 	return &a.Username
-// }
+func (a *AuthResponse) getUsername() *string {
+	return &a.Username
+}
 
-// func main() {
+func main() {
 
-// 	u1 := &AuthResponse{
-// 		ID:        1,
-// 		Username:  "jujun_junaedi",
-// 		Group:     "admin",
-// 		Token:     "92638dsgd927&%(@#flfvsfsm",
-// 		CreatedAt: time.Now(),
-// 	}
+	u1 := &AuthResponse{
+		ID:        1,
+		Username:  "jujun_junaedi",
+		Group:     "admin",
+		Token:     "92638dsgd927&%(@#flfvsfsm",
+		CreatedAt: time.Now(),
+	}
 
-// 	u2 := &AuthResponse{}
+	u2 := &AuthResponse{}
 
-// 	fmt.Println(u1.getUsername())
-// 	fmt.Println(u1)
-// 	fmt.Println(u2)
+	fmt.Println(u1.getUsername())
+	fmt.Println(u1)
+	fmt.Println(u2)
 
-// }
+}

@@ -1,28 +1,28 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	post := test()
-// 	xiy := eRe()
+	post := test()
+	xiy := eRe()
 
-// 	xiy(0)
+	xiy(0)
 
-// 	fmt.Println(post(5))
+	fmt.Println(post(5))
 
-// }
+}
 
-// func test() func(v int) int {
-// 	s := 0
-// 	return func(v int) int {
-// 		s += v
-// 		return s
-// 	}
-// }
+func test() func(v int) int {
+	s := 0
+	return func(v int) int {
+		s += v
+		return s
+	}
+}
 
-// func eRe() func(int) int {
-// 	return func(x int) int {
-// 		return x
-// 	}
-// }
+func eRe() func(int) int {
+	return func(x int) int {
+		return x
+	}
+}

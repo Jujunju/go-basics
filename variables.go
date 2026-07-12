@@ -1,12 +1,12 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// var fullName string
-// var lastName string
+var fullName string
+var lastName string
 
-// func main() {
+func main() {
 
-// 	fmt.Println(fullName, lastName)
+	fmt.Println(fullName, lastName)
 
-// }
+}

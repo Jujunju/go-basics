@@ -1,7 +1,7 @@
-// package main
+package main
 
-// var mySlicesNested = [][][]string{{{"hello"}}}
+var mySlicesNested = [][][]string{{{"hello"}}}
 
-// func main() {
+func main() {
 
-// }
+}

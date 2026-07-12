@@ -1,42 +1,42 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// type Lum[T any] struct {
-// 	Next *Lum[T]
-// 	V    T
-// }
+type Lum[T any] struct {
+	Next *Lum[T]
+	V    T
+}
 
-// func main() {
+func main() {
 
-// 	y := &Lum[int]{V: 10}
+	y := &Lum[int]{V: 10}
 
-// 	y.cAdd(20)
-// 	y.cShow()
+	y.cAdd(20)
+	y.cShow()
 
-// }
+}
 
-// func (l *Lum[T]) cAdd(i T) {
+func (l *Lum[T]) cAdd(i T) {
 
-// 	mw := &Lum[T]{V: i}
+	mw := &Lum[T]{V: i}
 
-// 	c := l
+	c := l
 
-// 	for c.Next != nil {
-// 		c = c.Next
-// 	}
+	for c.Next != nil {
+		c = c.Next
+	}
 
-// 	c.Next = mw
+	c.Next = mw
 
-// }
+}
 
-// func (l *Lum[T]) cShow() {
-// 	c := l
+func (l *Lum[T]) cShow() {
+	c := l
 
-// 	for c != nil {
-// 		fmt.Printf("[%v] -> ", c.V)
-// 		c = c.Next
-// 	}
+	for c != nil {
+		fmt.Printf("[%v] -> ", c.V)
+		c = c.Next
+	}
 
-// 	fmt.Println("End")
-// }
+	fmt.Println("End")
+}

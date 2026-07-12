@@ -1,27 +1,27 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	n := hitungTotal([]int{30000, 75000, 55000})
+	n := hitungTotal([]int{30000, 75000, 55000})
 
-// 	fmt.Println(n)
+	fmt.Println(n)
 
-// }
+}
 
-// func hitungTotal(v []int) int64 {
+func hitungTotal(v []int) int64 {
 
-// 	result := 0
+	result := 0
 
-// 	for i := 0; i < len(v); i++ {
-// 		result += v[i]
-// 	}
+	for i := 0; i < len(v); i++ {
+		result += v[i]
+	}
 
-// 	if result > 100000 {
-// 		result -= 10000
-// 	}
+	if result > 100000 {
+		result -= 10000
+	}
 
-// 	return int64(result)
+	return int64(result)
 
-// }
+}

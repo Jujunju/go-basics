@@ -1,19 +1,19 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	myFunc2 := func(age int) int {
-// 		return age
-// 	}
+	myFunc2 := func(age int) int {
+		return age
+	}
 
-// 	func(name string, age int) {
-// 		fmt.Println(name, age)
-// 	}("jujun", 18)
+	func(name string, age int) {
+		fmt.Println(name, age)
+	}("jujun", 18)
 
-// }
+}
 
-// var myFunc = func(fullName string) string {
-// 	return fullName
-// }
+var myFunc = func(fullName string) string {
+	return fullName
+}

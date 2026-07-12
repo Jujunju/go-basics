@@ -1,38 +1,38 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// type ErrNegativeSqrt float64
+type ErrNegativeSqrt float64
 
-// func (e ErrNegativeSqrt) Error() string {
-// 	return fmt.Sprintf("Error : %v\n", float64(e))
-// }
+func (e ErrNegativeSqrt) Error() string {
+	return fmt.Sprintf("Error : %v\n", float64(e))
+}
 
-// func main() {
+func main() {
 
-// 	i, e := Sqrt(-1)
+	i, e := Sqrt(-1)
 
-// 	if e != nil {
-// 		fmt.Println(e.Error())
-// 		return
-// 	}
+	if e != nil {
+		fmt.Println(e.Error())
+		return
+	}
 
-// 	fmt.Println(i)
+	fmt.Println(i)
 
 
-// }
+}
 
-// func Sqrt(x float64) (float64, error) {
+func Sqrt(x float64) (float64, error) {
 
-// 	if x < 0 {
-// 		return 0, ErrNegativeSqrt(x)
-// 	}
+	if x < 0 {
+		return 0, ErrNegativeSqrt(x)
+	}
 
-// 	z := 1.0
+	z := 1.0
 
-// 	for i := 0; i < 10; i++ {
-// 		z -= (z*z - x) / (2 * z)
-// 	}
+	for i := 0; i < 10; i++ {
+		z -= (z*z - x) / (2 * z)
+	}
 
-// 	return z, nil
-// }
+	return z, nil
+}

@@ -1,47 +1,47 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// func main() {
+func main() {
 
-// 	var i = []string{"halo", "kamu", "rusuh", "hebat"}
+	var i = []string{"halo", "kamu", "rusuh", "hebat"}
 
-// 	mb := sensorKata(i)
+	mb := sensorKata(i)
 
-// 	fmt.Println(mb)
+	fmt.Println(mb)
 
-// 	var fnFilter = func(ss []string) []string {
+	var fnFilter = func(ss []string) []string {
 
-// 		temp := []string{}
+		temp := []string{}
 
-// 		for i := 0; i < len(ss); i++ {
-// 			if ss[i] != "rusuh" {
-// 				temp = append(temp, ss[i])
-// 			}
-// 		}
+		for i := 0; i < len(ss); i++ {
+			if ss[i] != "rusuh" {
+				temp = append(temp, ss[i])
+			}
+		}
 
-// 		return temp
-// 	}
+		return temp
+	}
 
-// 	fmt.Println(sensorKata2(i, fnFilter))
+	fmt.Println(sensorKata2(i, fnFilter))
 
-// }
+}
 
-// func sensorKata(s []string) []string {
+func sensorKata(s []string) []string {
 
-// 	result := []string{}
+	result := []string{}
 
-// 	for _, v := range s {
-// 		if v != "rusuh" {
-// 			result = append(result, v)
-// 		}
-// 	}
+	for _, v := range s {
+		if v != "rusuh" {
+			result = append(result, v)
+		}
+	}
 
-// 	return result
-// }
+	return result
+}
 
-// func sensorKata2(s []string, rf func([]string) []string) []string {
-// 	result := rf(s)
+func sensorKata2(s []string, rf func([]string) []string) []string {
+	result := rf(s)
 
-// 	return  result
-// }
+	return  result
+}

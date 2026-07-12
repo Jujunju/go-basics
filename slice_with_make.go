@@ -1,28 +1,28 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// var temp = [3]string{}
+var temp = [3]string{}
 
-// func main() {
+func main() {
 
-// 	values := make([]string, len(temp), cap(temp))
+	values := make([]string, len(temp), cap(temp))
 
-// 	values[0] = "Jujun"
-// 	values[1] = "alif"
-// 	values[2] = "nugraha"
+	values[0] = "Jujun"
+	values[1] = "alif"
+	values[2] = "nugraha"
 
-// 	values = append(values, "jujun")
-
-
-// 	users := make([]string, 0, 10)
-
-// 	for _, v := range values {
-// 		users = append(users, v)
-// 	}
+	values = append(values, "jujun")
 
 
-// 	fmt.Println(values)
-// 	fmt.Println(users[0])
+	users := make([]string, 0, 10)
 
-// }
+	for _, v := range values {
+		users = append(users, v)
+	}
+
+
+	fmt.Println(values)
+	fmt.Println(users[0])
+
+}

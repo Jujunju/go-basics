@@ -1,14 +1,14 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// var slices []int
+var slices []int
 
-// var slices2 = []int{}
+var slices2 = []int{}
 
-// func main() {
+func main() {
 
-// 	fmt.Println(slices)
-// 	fmt.Println(slices2)
+	fmt.Println(slices)
+	fmt.Println(slices2)
 
-// }
+}

@@ -1,30 +1,30 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// var users [3]string = [3]string{"sandira", "ayu", "anli"}
-// var address [3]string = [3]string{"jl sutomo", "jl mangku", "jl simantri"}
+var users [3]string = [3]string{"sandira", "ayu", "anli"}
+var address [3]string = [3]string{"jl sutomo", "jl mangku", "jl simantri"}
 
-// func main() {
+func main() {
 
-// 	u1 := &users
-// 	a1 := &address
+	u1 := &users
+	a1 := &address
 
-// 	str := &users[0]
+	str := &users[0]
 
-// 	*str = "jujun"
+	*str = "jujun"
 
-// 	a1[0] = "jl jambrud"
+	a1[0] = "jl jambrud"
 
-// 	for i, v := range a1 {
-// 		fmt.Println(i, v)
-// 	}
+	for i, v := range a1 {
+		fmt.Println(i, v)
+	}
 
-// 	fmt.Println(users)
-// 	fmt.Println(address)
+	fmt.Println(users)
+	fmt.Println(address)
 
-// 	fmt.Println(u1)
-// 	fmt.Println(a1)
+	fmt.Println(u1)
+	fmt.Println(a1)
 
 
-// }
+}

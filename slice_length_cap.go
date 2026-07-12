@@ -1,11 +1,11 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// var slices = []string{"wortel", "pisang", "anggur"}
+var slices = []string{"wortel", "pisang", "anggur"}
 
-// func main() {
+func main() {
 
-// 	fmt.Printf("len=%d cap=%d %v\n", len(slices), cap(slices), slices)
+	fmt.Printf("len=%d cap=%d %v\n", len(slices), cap(slices), slices)
 
-// }
+}
