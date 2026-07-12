@@ -23,16 +23,16 @@ var (
 
 func main() {
 
-	// var c C
+	var c C
 
-	// n, e := validasiSesi(&User{
-	// 	Username: "jujun_ju",
-	// 	IsAdmin: false,
-	// })
-	// c = &User{
-	// 	Username: "jujun_ju",
-	// 	IsAdmin: false,
-	// }
+	n, e := validasiSesi(&User{
+		Username: "jujun_ju",
+		IsAdmin: false,
+	})
+	c = &User{
+		Username: "jujun_ju",
+		IsAdmin: false,
+	}
 
 	di := &Sa{}
 

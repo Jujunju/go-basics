@@ -1,11 +1,11 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// var myArryNes = [2][3]string{{"jujun", "junaedi", "ahmad"}, {"jujun", "junaedi", "ahmad"}}
+var myArryNes = [2][3]string{{"jujun", "junaedi", "ahmad"}, {"jujun", "junaedi", "ahmad"}}
 
-// func main() {
+func main() {
 
-// 	fmt.Println(myArryNes)
+	fmt.Println(myArryNes)
 
-// }
+}

@@ -1,36 +1,36 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-// type MyI interface {
-// 	Me() string
-// }
+type MyI interface {
+	Me() string
+}
 
-// var n interface{}
+var n interface{}
 
-// func main() {
+func main() {
 
-// 	var mI MyI
+	var mI MyI
 
-// 	n = mI
-// 	n = true
+	n = mI
+	n = true
 
-// 	if r, s := n.(MyI); s {
-// 		fmt.Println(r.Me())
-// 	}
+	if r, s := n.(MyI); s {
+		fmt.Println(r.Me())
+	}
 
-// 	switch v:=  n.(type) {
-// 	case int:
-// 		fmt.Println("ini adalah integer", v)
-// 	case string:
-// 		fmt.Println("ini adalah string", v)
-// 	case bool:
-// 		fmt.Println("ini adalah boolean", v)
-// 	default:
-// 		fmt.Println("tidak dikenali", v)
-// 	}
-// }
+	switch v:=  n.(type) {
+	case int:
+		fmt.Println("ini adalah integer", v)
+	case string:
+		fmt.Println("ini adalah string", v)
+	case bool:
+		fmt.Println("ini adalah boolean", v)
+	default:
+		fmt.Println("tidak dikenali", v)
+	}
+}
 
-// func Me() string {
-// 	return "hi"
-// }
+func Me() string {
+	return "hi"
+}
